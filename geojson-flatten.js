@@ -12,7 +12,7 @@ function flatten(gj, up) {
             return flatten(gj.geometry).map(function(geom) {
                 return {
                     type: 'Feature',
-                    properties: gj.properties,
+                    properties: JSON.parse(JSON.stringify(gj.properties)),
                     geometry: geom
                 };
             });
