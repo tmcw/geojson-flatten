@@ -10,7 +10,7 @@
     "geojson-flatten": "./geojson-flatten"
   },
   "scripts": {
-    "test": "node test/flatten.js",
+    "test": "tap --coverage test/flatten.js",
     "make": "browserify -s geojsonFlatten index.js > geojson-flatten.js"
   },
   "repository": {
@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/mapbox/geojson-flatten",
   "dependencies": {
-    "minimist": "0.0.5",
     "concat-stream": "~1.2.1",
+    "minimist": "0.0.5",
     "sharkdown": "~0.1.0"
   },
   "devDependencies": {
-    "tap": "~0.4.6",
-    "browserify": "~3.18.0"
+    "tap": "^2.3.1",
+    "browserify": "^12.0.1"
   }
 }

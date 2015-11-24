@@ -1,6 +1,6 @@
 module.exports = flatten;
 
-function flatten(gj, up) {
+function flatten(gj) {
     switch ((gj && gj.type) || null) {
         case 'FeatureCollection':
             gj.features = gj.features.reduce(function(mem, feature) {
