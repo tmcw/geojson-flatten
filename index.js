@@ -1,5 +1,3 @@
-module.exports = flatten;
-
 function flatten(gj) {
     switch ((gj && gj.type) || null) {
         case 'FeatureCollection':
@@ -8,6 +6,7 @@ function flatten(gj) {
             }, []);
             return gj;
         case 'Feature':
+            if (!gj.geometry) return gj;
             return flatten(gj.geometry).map(function(geom) {
                 return {
                     type: 'Feature',
@@ -28,12 +27,14 @@ function flatten(gj) {
                 return { type: 'LineString', coordinates: _ };
             });
         case 'GeometryCollection':
-            return gj.geometries;
+            return gj.geometries.map(flatten).reduce(function(memo, geoms) {
+                return memo.concat(geoms);
+            }, []);
         case 'Point':
         case 'Polygon':
         case 'LineString':
             return [gj];
-        default:
-            return gj;
     }
 }
+
+module.exports = flatten;

@@ -1,0 +1,18 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+		  [[0, 0], [1, 1]],
+		  [[2, 2], [3, 3]]
+		]
+            },
+            "properties": {
+                "name": "SF Marina Harbor Master"
+            }
+        }
+    ]
+}

@@ -7,6 +7,34 @@
         "name": "SF Marina Harbor Master"
       },
       "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4425587930444,
+          37.80666418607323,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SF Marina Harbor Master"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4428379594768,
+          37.80663578323093,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SF Marina Harbor Master"
+      },
+      "geometry": {
         "type": "LineString",
         "coordinates": [
           [
