@@ -2,12 +2,14 @@
 
 var flatten = require('./'),
     concat = require('concat-stream'),
-    sharkdown = require('sharkdown'),
     fs = require('fs'),
     argv = require('minimist')(process.argv.slice(2));
 
 if (process.stdin.isTTY && !argv._[0]) {
-    process.stdout.write(sharkdown(fs.readFileSync(__dirname + '/HELP.md')));
+    process.stdout.write(`
+Usage:
+	cat input.geojson | geojson-flatten > flattened.geojson
+\n`);
     process.exit(1);
 }
 

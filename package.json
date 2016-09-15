@@ -30,8 +30,7 @@
   "homepage": "https://github.com/mapbox/geojson-flatten",
   "dependencies": {
     "concat-stream": "~1.2.1",
-    "minimist": "0.0.5",
-    "sharkdown": "~0.1.0"
+    "minimist": "0.0.5"
   },
   "devDependencies": {
     "tap": "^2.3.1",
