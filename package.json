@@ -4,8 +4,8 @@
   "description": "transform geojson into single-parts",
   "main": "index.js",
   "files": [
-  	"index.js",
-  	"geojson-flatten"
+    "index.js",
+    "geojson-flatten"
   ],
   "directories": {
     "test": "test"
