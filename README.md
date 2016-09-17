@@ -14,8 +14,12 @@ Or download `geojson-flatten.js` for non-[browserify](http://browserify.org/) us
 
 ## example
 
-```
+```js
 var flatten = require('geojson-flatten');
 
 flattened = flatten(geojsonObject);
 ```
+
+## cli
+
+	cat input.geojson | geojson-flatten > flattened.geojson
