@@ -1,5 +1,7 @@
 # geojson-flatten
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tmcw/geojson-flatten.svg)](https://greenkeeper.io/)
+
 [![build status](https://secure.travis-ci.org/tmcw/geojson-flatten.svg)](http://travis-ci.org/tmcw/geojson-flatten)
 
 Flatten MultiPoint, MultiPolygon, MultiLineString, and GeometryCollection
