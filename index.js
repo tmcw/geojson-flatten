@@ -8,7 +8,7 @@ function flatten(gj) {
         case 'Feature':
             if (!gj.geometry) return gj;
             return flatten(gj.geometry).map(function(geom) {
-                const data = {
+                var data = {
                     type: 'Feature',
                     properties: JSON.parse(JSON.stringify(gj.properties)),
                     geometry: geom
