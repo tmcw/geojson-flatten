@@ -8,11 +8,15 @@ function flatten(gj) {
         case 'Feature':
             if (!gj.geometry) return gj;
             return flatten(gj.geometry).map(function(geom) {
-                return {
+                const data = {
                     type: 'Feature',
                     properties: JSON.parse(JSON.stringify(gj.properties)),
                     geometry: geom
-                };
+                }
+                if (gj.id) {
+                    data.id = gj.id
+                }
+                return data;
             });
         case 'MultiPoint':
             return gj.coordinates.map(function(_) {
