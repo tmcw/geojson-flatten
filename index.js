@@ -13,7 +13,7 @@ function flatten(gj) {
                     properties: JSON.parse(JSON.stringify(gj.properties)),
                     geometry: geom
                 }
-                if (gj.id) {
+                if (gj.id || gj.id === 0) {
                     data.id = gj.id
                 }
                 return data;
