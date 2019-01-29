@@ -1,20 +1,24 @@
 #!/usr/bin/env node
 
-var flatten = require('./'),
-    concat = require('concat-stream'),
-    fs = require('fs'),
-    argv = require('minimist')(process.argv.slice(2));
+var flatten = require("./"),
+  fs = require("fs"),
+  getStdin = require("get-stdin"),
+  argv = require("minimist")(process.argv.slice(2));
 
 if (process.stdin.isTTY && !argv._[0]) {
-    process.stdout.write(`
+  process.stdout.write(`
 Usage:
 	cat input.geojson | geojson-flatten > flattened.geojson
 \n`);
-    process.exit(1);
+  process.exit(1);
 }
 
-(argv._.length ? fs.createReadStream(argv._[0]) : process.stdin).pipe(concat(convert));
+if (argv._.length) {
+  convert(fs.readFileSync(argv._[0], "utf8"));
+} else {
+  getStdin().then(convert);
+}
 
 function convert(data) {
-    process.stdout.write(JSON.stringify(flatten(JSON.parse(data)), argv));
+  process.stdout.write(JSON.stringify(flatten(JSON.parse(data)), argv));
 }

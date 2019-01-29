@@ -2,9 +2,14 @@
   "name": "geojson-flatten",
   "version": "0.2.2",
   "description": "transform geojson into single-parts",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "files": [
     "index.js",
+    "dist",
     "geojson-flatten"
   ],
   "directories": {
@@ -15,11 +20,14 @@
   },
   "scripts": {
     "test": "eslint index.js && tap --coverage test/flatten.js",
-    "make": "browserify -s geojsonFlatten index.js > geojson-flatten.js"
+    "pretest": "microbundle --name geojsonFlatten",
+    "prepare": "microbundle --name geojsonFlatten",
+    "make": "browserify -s geojsonFlatten index.js > geojson-flatten.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/geojson-flatten.git"
+    "url": "git://github.com/node-geojson/geojson-flatten.git"
   },
   "keywords": [
     "geojson",
@@ -29,17 +37,17 @@
   "author": "Tom MacWright",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/mapbox/geojson-flatten/issues"
+    "url": "https://github.com/node-geojson/geojson-flatten/issues"
   },
-  "homepage": "https://github.com/mapbox/geojson-flatten",
+  "homepage": "https://github.com/node-geojson/geojson-flatten",
   "dependencies": {
-    "concat-stream": "~1.6.0",
+    "get-stdin": "^6.0.0",
     "minimist": "1.2.0"
   },
   "devDependencies": {
-    "tap": "^10.3.2",
-    "browserify": "^14.3.0",
-    "eslint": "~1.00.0",
-    "eslint-config-unstyled": "^1.1.0"
+    "eslint": "^5.12.1",
+    "microbundle": "^0.9.0",
+    "standard-version": "^4.4.0",
+    "tap": "^12.4.0"
   }
 }
