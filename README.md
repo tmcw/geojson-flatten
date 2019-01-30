@@ -1,6 +1,6 @@
 # geojson-flatten
 
-[![CircleCI](https://circleci.com/gh/node-geojson/geojson-flatten/tree/master.svg?style=svg)](https://circleci.com/gh/node-geojson/geojson-flatten/tree/master)
+[![CircleCI](https://circleci.com/gh/tmcw/geojson-flatten/tree/master.svg?style=svg)](https://circleci.com/gh/tmcw/geojson-flatten/tree/master)
 
 Flatten MultiPoint, MultiPolygon, MultiLineString, and GeometryCollection
 geometries in [GeoJSON](http://geojson.org/) files into simple non-complex
