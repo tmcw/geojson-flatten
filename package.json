@@ -48,6 +48,6 @@
     "eslint": "^5.12.1",
     "microbundle": "^0.9.0",
     "standard-version": "^4.4.0",
-    "tap": "^12.4.0"
+    "tap": "^12.5.0"
   }
 }
