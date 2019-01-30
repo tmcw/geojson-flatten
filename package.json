@@ -22,7 +22,6 @@
     "test": "eslint index.js && tap test/flatten.js",
     "pretest": "microbundle --name geojsonFlatten",
     "prepare": "microbundle --name geojsonFlatten",
-    "make": "browserify -s geojsonFlatten index.js > geojson-flatten.js",
     "release": "standard-version"
   },
   "repository": {
