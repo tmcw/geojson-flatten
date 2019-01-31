@@ -1,12 +1,9 @@
 {
   "name": "geojson-flatten",
-  "version": "1.0.0",
+  "version": "0.2.4",
   "description": "transform geojson into single-parts",
   "source": "index.js",
   "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "unpkg": "dist/index.umd.js",
-  "module": "dist/index.es.js",
   "files": [
     "index.js",
     "dist",
