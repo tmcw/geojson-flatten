@@ -20,7 +20,6 @@
   },
   "scripts": {
     "test": "eslint index.js && tap test/flatten.js",
-    "pretest": "microbundle --name geojsonFlatten",
     "prepare": "microbundle --name geojsonFlatten",
     "release": "standard-version"
   },
