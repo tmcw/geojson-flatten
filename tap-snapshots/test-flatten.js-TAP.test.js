@@ -7,43 +7,37 @@
 'use strict'
 exports[`test/flatten.js TAP flatten multigeometry.input.geojson > multigeometry.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Point",
         "coordinates": Array [
           -122.4425587930444,
           37.80666418607323,
           0,
         ],
+        "type": "Point",
       },
-    },
-    Object {
-      "type": "Feature",
       "properties": Object {
         "name": "SF Marina Harbor Master",
       },
+      "type": "Feature",
+    },
+    Object {
       "geometry": Object {
-        "type": "Point",
         "coordinates": Array [
           -122.4428379594768,
           37.80663578323093,
           0,
         ],
+        "type": "Point",
       },
-    },
-    Object {
-      "type": "Feature",
       "properties": Object {
         "name": "SF Marina Harbor Master",
       },
+      "type": "Feature",
+    },
+    Object {
       "geometry": Object {
-        "type": "LineString",
         "coordinates": Array [
           Array [
             -122.4425587930444,
@@ -56,15 +50,15 @@ Object {
             0,
           ],
         ],
+        "type": "LineString",
       },
-    },
-    Object {
-      "type": "Feature",
       "properties": Object {
         "name": "SF Marina Harbor Master",
       },
+      "type": "Feature",
+    },
+    Object {
       "geometry": Object {
-        "type": "LineString",
         "coordinates": Array [
           Array [
             -122.4425509770566,
@@ -77,23 +71,23 @@ Object {
             0,
           ],
         ],
+        "type": "LineString",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
 
 exports[`test/flatten.js TAP flatten multilinestring.input.geojson > multilinestring.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "LineString",
         "coordinates": Array [
           Array [
             0,
@@ -104,15 +98,15 @@ Object {
             1,
           ],
         ],
+        "type": "LineString",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "LineString",
         "coordinates": Array [
           Array [
             2,
@@ -123,57 +117,57 @@ Object {
             3,
           ],
         ],
+        "type": "LineString",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
 
 exports[`test/flatten.js TAP flatten multipoint.input.geojson > multipoint.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Point",
         "coordinates": Array [
           0,
           0,
         ],
+        "type": "Point",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Point",
         "coordinates": Array [
           1,
           1,
         ],
+        "type": "Point",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
 
 exports[`test/flatten.js TAP flatten multipolygon.input.geojson > multipolygon.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Polygon",
         "coordinates": Array [
           Array [
             0,
@@ -192,15 +186,15 @@ Object {
             0,
           ],
         ],
+        "type": "Polygon",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Polygon",
         "coordinates": Array [
           Array [
             0,
@@ -219,44 +213,50 @@ Object {
             0,
           ],
         ],
+        "type": "Polygon",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
 
 exports[`test/flatten.js TAP flatten nullgeometry.input.geojson > nullgeometry.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
       "geometry": null,
       "properties": Object {
         "name": "SF Marina Harbor Master",
       },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
 
 exports[`test/flatten.js TAP flatten point.input.geojson > point.input.geojson 1`] = `
 Object {
-  "type": "FeatureCollection",
   "features": Array [
     Object {
-      "type": "Feature",
-      "properties": Object {
-        "name": "SF Marina Harbor Master",
-      },
       "geometry": Object {
-        "type": "Point",
         "geometries": Array [
           0,
           0,
         ],
+        "type": "Point",
       },
+      "properties": Object {
+        "name": "SF Marina Harbor Master",
+      },
+      "type": "Feature",
     },
   ],
+  "type": "FeatureCollection",
 }
 `
