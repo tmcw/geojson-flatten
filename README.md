@@ -6,6 +6,8 @@ Flatten MultiPoint, MultiPolygon, MultiLineString, and GeometryCollection
 geometries in [GeoJSON](http://geojson.org/) files into simple non-complex
 geometries.
 
+If a FeatureCollection is passed in, a FeatureCollection is returned. If a single Feature is passed in, an array of Features is returned.
+
 ## install
 
 ```
