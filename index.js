@@ -6,7 +6,7 @@ export default function flatten(gj) {
       }, []);
       return gj;
     case "Feature":
-      if (!gj.geometry) return gj;
+      if (!gj.geometry) return [gj];
       return flatten(gj.geometry).map(function(geom) {
         var data = {
           type: "Feature",
