@@ -1,6 +1,6 @@
 {
   "name": "geojson-flatten",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "transform geojson into single-parts",
   "source": "index.js",
   "main": "dist/index.js",
