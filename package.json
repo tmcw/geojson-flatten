@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/node-geojson/geojson-flatten",
   "dependencies": {
-    "get-stdin": "^7.0.0",
+    "get-stdin": "^8.0.0",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
