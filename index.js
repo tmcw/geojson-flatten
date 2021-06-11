@@ -37,6 +37,7 @@ export default function flatten(gj) {
     case "Point":
     case "Polygon":
     case "LineString":
+    default:
       return [gj];
   }
 }
