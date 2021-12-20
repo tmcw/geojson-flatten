@@ -43,7 +43,7 @@
     "minimist": "^1.2.5"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
+    "eslint": "^8.5.0",
     "microbundle": "^0.13.0",
     "standard-version": "^9.0.0",
     "tap": "^14.10.6"
