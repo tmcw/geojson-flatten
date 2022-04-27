@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "eslint": "^7.0.0",
-    "microbundle": "^0.13.0",
+    "microbundle": "^0.15.0",
     "standard-version": "^9.0.0",
     "tap": "^14.10.6"
   }
