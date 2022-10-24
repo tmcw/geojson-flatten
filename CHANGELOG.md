@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/tmcw/geojson-flatten/compare/v1.1.0...v1.1.1) (2022-10-24)
+
+
+### Bug Fixes
+
+* remove path to executable as the script was removed in [#93](https://github.com/tmcw/geojson-flatten/issues/93) ([#95](https://github.com/tmcw/geojson-flatten/issues/95)) ([9d66a3e](https://github.com/tmcw/geojson-flatten/commit/9d66a3e46b0afdf8481a95f87c3e1489ee6172fd)), closes [#94](https://github.com/tmcw/geojson-flatten/issues/94)
+
 ## [1.1.0](https://github.com/tmcw/geojson-flatten/compare/v1.0.4...v1.1.0) (2022-10-24)
 
 
