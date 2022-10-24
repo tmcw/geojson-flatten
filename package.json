@@ -15,9 +15,6 @@
   "directories": {
     "test": "test"
   },
-  "bin": {
-    "geojson-flatten": "./geojson-flatten"
-  },
   "scripts": {
     "test": "eslint index.js && tap test/flatten.js",
     "prepare": "microbundle --name geojsonFlatten",
