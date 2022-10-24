@@ -23,17 +23,3 @@ let flatten = require('geojson-flatten');
 
 flattened = flatten(geojsonObject);
 ```
-
-## cli
-
-With a file input
-
-```
-$ geojson-flatten input.geojson > flattened.geojson
-```
-
-With stdin
-
-```
-$ geojson-random | geojson-flatten > flattened.geojson
-```

@@ -38,10 +38,6 @@
     "url": "https://github.com/tmcw/geojson-flatten/issues"
   },
   "homepage": "https://github.com/tmcw/geojson-flatten",
-  "dependencies": {
-    "get-stdin": "^8.0.0",
-    "minimist": "^1.2.5"
-  },
   "devDependencies": {
     "eslint": "^7.0.0",
     "microbundle": "^0.13.0",
