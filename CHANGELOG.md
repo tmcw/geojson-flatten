@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/tmcw/geojson-flatten/compare/v1.0.4...v1.1.0) (2022-10-24)
+
+
+### Features
+
+* Remove CLI ([#93](https://github.com/tmcw/geojson-flatten/issues/93)) ([254e2b1](https://github.com/tmcw/geojson-flatten/commit/254e2b13aa6762f435c5973c83fe1e9574efe798))
+
+
+### Bug Fixes
+
+* Remove dependabot. Fix package paths ([#92](https://github.com/tmcw/geojson-flatten/issues/92)) ([5890845](https://github.com/tmcw/geojson-flatten/commit/5890845572e926c04e8713c1306abf51cf2648f2))
+
 ### [1.0.5](https://github.com/tmcw/geojson-flatten/compare/v1.0.4...v1.0.5) (2022-10-24)
 
 
