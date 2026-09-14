@@ -20,7 +20,7 @@
   "scripts": {
     "test": "biome check . && node --test",
     "prepare": "microbundle --name geojsonFlatten",
-    "release": "changeset publish"
+    "release": "npm stage publish"
   },
   "repository": {
     "type": "git",
