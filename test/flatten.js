@@ -1,22 +1,23 @@
-import flatten from "../";
-import fs from "fs";
-import tap from "tap";
+import fs from "node:fs";
+import path from "node:path";
+import { test } from "node:test";
+import { fileURLToPath } from "node:url";
+import flatten from "../index.js";
 
-tap.test("flatten", function(group) {
-  fs.readdirSync(__dirname + "/fixture")
-    .filter(function(fix) {
-      return fix.match(/input/);
-    })
-    .forEach(function(fixture) {
-      group.test(fixture, function(t) {
-        t.matchSnapshot(
-          flatten(
-            JSON.parse(fs.readFileSync(__dirname + "/fixture/" + fixture))
-          ),
-          fixture
-        );
-        t.end();
-      });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const fixtureDir = path.join(__dirname, "fixture");
+
+test("flatten", async (t) => {
+  const fixtures = fs
+    .readdirSync(fixtureDir)
+    .filter((fixture) => fixture.includes("input"));
+
+  for (const fixture of fixtures) {
+    await t.test(fixture, (t) => {
+      const input = JSON.parse(
+        fs.readFileSync(path.join(fixtureDir, fixture), "utf8"),
+      );
+      t.assert.snapshot(flatten(input));
     });
-  group.end();
+  }
 });
