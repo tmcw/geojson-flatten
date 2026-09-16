@@ -4,22 +4,15 @@
   "packageManager": "pnpm@12.4.1",
   "type": "module",
   "description": "transform geojson into single-parts",
-  "source": "index.js",
-  "main": "dist/index.cjs",
-  "umd:main": "dist/index.umd.js",
-  "unpkg": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "files": [
-    "index.js",
-    "dist",
-    "geojson-flatten"
-  ],
-  "directories": {
-    "test": "test"
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "biome check . && node --test",
-    "prepare": "microbundle --name geojsonFlatten",
     "release": "npm stage publish"
   },
   "repository": {
@@ -39,7 +32,6 @@
   "homepage": "https://github.com/tmcw/geojson-flatten",
   "devDependencies": {
     "@biomejs/biome": "^2.5.13",
-    "@changesets/cli": "^3.0.2",
-    "microbundle": "^0.13.0"
+    "@changesets/cli": "^3.0.2"
   }
 }
