@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.0-20260916000022
+
+### Major Changes
+
+- Release as pure ESM
+  
+  This will be compatible with all modern browsers, Node.js, and more.
+
 ## 1.1.2
 
 ### Patch Changes
