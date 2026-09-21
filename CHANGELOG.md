@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.1
+
+### Patch Changes
+
+- 7d86069: Avoid repeatedly copying accumulated results when flattening feature and geometry collections.
+
 ## 2.0.0
 
 ### Major Changes
