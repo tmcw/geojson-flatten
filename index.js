@@ -1,10 +1,7 @@
 export default function flatten(gj) {
   switch (gj?.type || null) {
     case "FeatureCollection":
-      gj.features = gj.features.reduce(
-        (mem, feature) => mem.concat(flatten(feature)),
-        [],
-      );
+      gj.features = gj.features.flatMap(flatten);
       return gj;
     case "Feature":
       if (!gj.geometry) return [gj];
@@ -29,9 +26,7 @@ export default function flatten(gj) {
         coordinates: _,
       }));
     case "GeometryCollection":
-      return gj.geometries
-        .map(flatten)
-        .reduce((memo, geoms) => memo.concat(geoms), []);
+      return gj.geometries.flatMap(flatten);
     case "Point":
     case "Polygon":
     case "LineString":
